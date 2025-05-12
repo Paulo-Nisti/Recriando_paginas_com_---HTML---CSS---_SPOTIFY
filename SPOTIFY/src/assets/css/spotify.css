@@ -1,0 +1,354 @@
+@font-face{
+    font-family: 'circular--black';
+    src: url('../fonts/CircularStd-Black.ttf');
+}
+@font-face{
+    font-family: 'circular--bold';
+    src: url('../fonts/CircularStd-Bold.ttf');
+}
+@font-face{
+    font-family: 'circular--book';
+    src: url('../fonts/CircularStd-Book.ttf');
+}
+@font-face{
+    font-family: 'circular--medium';
+    src: url('../fonts/CircularStd-Medium.ttf');
+}
+/* -------------------------------------INICIO----------------------------------------- */
+
+body{
+    margin: 0;
+    border: 0;
+    outline: 0;
+
+}
+.todo--container{
+    display: flex;
+    width: 100%; /* largura */
+    min-height: 100vh ; /* altura */
+
+}
+
+.fundo--degrade{
+    background: linear-gradient(210deg, #3333a3 0%,  #3333a3 10%, #121212 20%);
+}
+.degrade{
+    background: linear-gradient(100deg, #398386 0%,  #127477 10%, #000507 30%);
+}
+
+.fundo--preto{
+    background-color: #000000;
+}
+
+
+/* -------------------------------------ESTRUTURA - ESQUERDA----------------------------------------------- */
+
+.parte--esquerda{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 50px;
+
+}
+
+.padding--parte--esquerda{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 20px;
+}
+
+.conjunto--icone--menu{
+    display: flex;
+}
+.top--40{
+    margin-top: 40px;
+}
+
+/* -------------------------------------ESTRUTURA - MEIO----------------------------------------------- */
+
+.parte--meio{
+    display: flex;
+    flex-direction: column;
+    flex: 3.5;
+    padding: 0px 40px;
+    
+}
+.titulo--meio{
+    font-family: 'circular--bold';
+    font-size: 39px;
+    color: white;
+    margin-top: 30px;
+}
+
+/* -------------------------------------ESTRUTURA - DIREITA----------------------------------------------- */
+
+.parte--direita{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+
+/* -------------------------------------FONTES----------------------------------------------- */
+
+.texto--cinza{
+    color: #b3b3b3;
+}
+.texto--branco{
+    color: #ffffff;
+}
+.texto--preto{
+    color: #000000;
+}
+.component-see--all{
+    color: #adadad;
+    font-size: 16px;
+    font-family: 'circular--bold';
+}
+.icon--menu{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.component--item--menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'circular--bold';
+    cursor: pointer;
+}
+
+.component--item--secundario--menu{
+    font-size: 18px;
+    font-family: 'circular--book';
+    cursor: pointer;
+}
+
+.texto--see--all{
+    font-size: 25px;
+    font-family: 'circular--bold';
+    cursor: pointer;
+}
+
+.div--flex{
+    display: flex;
+}
+.div--columm{
+    display: flex;
+    flex-direction: column;
+    
+}
+.lista--estilos{
+    height: 100px;
+    gap: 30px;
+    margin-top: 20px;
+}
+.estilo--musical{
+    background: linear-gradient(
+        to right,
+        rgba(72, 72, 119, 0.3),
+        rgba(92, 95, 142, 0.3),
+        rgba(92, 95, 142, 0.3),
+        rgba(92, 95, 142, 0.3),
+        rgba(92, 95, 142, 0.3),
+        rgba(92, 95, 142, 0.3));
+        
+    border-radius: 6px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);    
+    cursor: pointer;   
+}
+.imagem--estilo--musical{
+    height: 100px;
+    width: 100px;
+}
+.nome--estilo--musical{
+    font-family: 'circular--bold';
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+}
+
+.item--end{
+    align-items: end;
+}
+.flex--end{
+    justify-content: flex-end;
+}
+.flex--start{
+    justify-content: flex-start;
+}
+
+.flex--1{
+    flex: 1;
+}
+.flex--4{
+    flex: 4;
+}
+.flex--3{
+    flex: 3;
+}
+.flex--2{
+    flex: 2;
+}
+.flex--10{
+    flex: 10;
+}
+
+.div--center{
+    align-items: center;
+}
+.center{
+    justify-content: center;
+}
+
+.icon--topo{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.topo{
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+.foto--perfil{
+    width: 34px;
+    height: 34px;
+    padding: 3px;
+}
+.nome--perfil{
+    font-size: 18px;
+    font-family: 'circular--bold';
+    color: white;
+}
+
+.texto--categoria{
+    font-family: 'circular--bold';
+}
+.component--texto--menu{
+    font-size: 18px;
+    font-family: 'circular--bold';
+}
+.conjunto--item--menu{
+    display: flex;
+    height: 32px;
+    gap: 20px;
+}
+.separator{
+    height: 0.5px;
+    width: 100%;
+    background: #282828;
+}
+.botao--perfil{
+    height: 40px;
+    width: 189px;
+    background-color: black;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.bloco--personalizado{
+    margin-top: 20px;
+    aspect-ratio: 9/12;
+    /* height: 400px;
+    width: 225px; */
+    background-color: #181818;
+    cursor: pointer;
+}
+.gap{
+    gap: 25px;
+}
+.foto{
+    width: 200px;
+    height: 200px;
+}
+.nome{
+    font-family: 'circular--bold';
+    color: white;
+    font-size: 25px;
+    margin-top: -15px;
+}
+.descricao--foto{
+    padding-left: 40px;
+    gap: 10px;
+    width: 200px;
+}
+
+
+.div--foto--musica--atual{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.div--foto--musica--atual img{
+    width: 310px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.parte--player{
+    display: flex;
+    height: 112px;
+    background-color: #181818;
+}
+.nome--musica{
+    font-family: 'circular--bold';
+    font-size: 20px;
+    color: white;
+    margin-left: 18px;
+    cursor: pointer;
+}
+.nome--autor{
+    font-family: 'circular--bold';
+    font-size: 18px;
+    color: #b3b3b3;
+    margin-left: 18px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.coracao{
+    width: 28px;
+    cursor: pointer;
+}
+
+.div-controls{
+    gap: 2px;
+    margin-top: 15px;
+}
+.icone--player{
+    width: 50px;
+    cursor: pointer;
+}
+.barra{
+    gap: 10px;
+}
+.tempo{
+    font-family: 'circular-bold';
+    font-size: 16px;
+    color: #a6a6a6;
+}
+.progresso{
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, white 60%, #a6a6a6 60% );
+    cursor: pointer;
+}
+
+.volume{
+    height: 3px;
+    width: 104px;
+    border-radius: 10px;
+    background: linear-gradient(to right, white 60%, #a6a6a6 60% );
+    cursor: pointer;
+}
+.div-3{
+    gap: 5px;
+    padding-right: 30px;
+}
