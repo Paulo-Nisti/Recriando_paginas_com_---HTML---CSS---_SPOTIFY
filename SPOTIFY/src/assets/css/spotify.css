@@ -132,6 +132,7 @@ body{
     font-size: 25px;
     font-family: 'circular--bold';
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .div--flex{
